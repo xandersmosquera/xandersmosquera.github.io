@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+
+/* *{
+    outline: solid red;
+} */
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 20rem;
+    
+   
+  }
+  
+  /* Cabecera */
+  .logmenu{
+    width: 100px;
+    height: 75px;  
+  }
+
+
+
+header{
+    background-image: url("guassianomini.png");
+    background-size: 100rem;
+}
+
+body{
+    background-color: rgb(39, 78, 19);
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+.slider {
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+/* ---Fin-Cabecera--- */
+
+
+
+
+.titulo_principal{
+    margin: 0 auto;
+    text-align: center;
+    width: 70vw;
+    color: #f1c232;
+    font-size: 2rem;
+}
+
+h2{
+    color: #f1c232;
+    text-align: center;
+    
+}
+
+.escritos{
+    color: #ffffff;
+    text-align: justify;
+    line-height: 2.0;
+    max-width: 310px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.box{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: auto;
+width: 70%;
+
+
+
+}
+
+.box__card{
+    margin: 0 auto;
+    
+}
+
+.pieza{
+    margin: 0 auto;
+    margin-left: 40px;
+    width: 90%;
+    height: 270px;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 7px 7px 30px;
+    object-fit: cover;
+    margin-top: 60px;
+    align-items: center;
+    
+}
+
+footer{
+    margin-top: 80px;
+    background-color: #f1c232;
+    color: #000;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+}
+
+.textopie{
+    font-size: 22px;
+    font-weight: bold;
+    
+    
+}
+
+/* Estilo de quienes somos */
+
+.titulo_somos{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #274e13;
+    background-color: #f1c232;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box2{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: center;
+
+    
+}
+
+
+.reseña{
+    margin-top: 5%;
+    color: #ffffff;
+    font-size: 16px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+
+.pieza2{
+    margin-top: 5%;
+    height: 435px;
+    width: 480px;
+}
+
+.pdfcat{
+    
+    height: 70vw;
+    width: 50vw;
+    justify-items: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+ul{
+    list-style: none;
+}
+
+/* Dispositivos Móviles */
+
+@media (max-width: 700px){
+    body{
+        padding: 0px 0;
+    }
+    
+    .box{
+        max-width: 30vh;
+        max-width: 50vw;
+        margin-top: 10px;
+        width: 30%;        
+        flex-direction: column;
+        justify-content: center;
+                
+    }
+
+    .box__card{
+        margin: 0 auto;
+        max-width: 400px;
+
+    }
+
+
+    img.pieza{
+        align-content: center;
+        height: 50%;
+        max-width: 300px;
+        justify-content: center;
+        
+    }
+
+    div.titulo_principal{
+        margin: 0 auto;
+        
+        font-size: 20px;
+        
+          
+        
+        
+    }
+
+   
+
+    .footer{
+    margin-top: 50px;
+    background-color: #f1c232;
+    color: #000;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+    }
+
+    .textopie{
+        font-size: 12px;
+        font-weight: bold;
+        
+        
+    }
+}
+
+@media (max-width: 698px){
+   
+   div.titulo_principal{
+       padding-bottom: 4px;
+       margin: 0 auto;
+   }
+   
+    div.box{
+        width: 100vw;
+        /* height: 100vh; */
+        
+        margin: 0 auto;
+    }
+
+    div.img.pieza{
+        max-width: 100%;
+        object-fit: fill;
+    }
+}
+
+
+
+.footer__f{
+    width: 100% !important;
+    border: none;
+    height: 220px;
+}
+
+.venta{
+    align-content: center;
+        height: 13rem;
+        max-width: 270px;
+}
+
+
+
+.card__figure{
+    height: 100px;
+    width: 150px;
+}
+
+@media (max-width: 1248px){
+   
+    .box{
+        justify-content: space-around;
+        align-content: center;
+        padding: 20px 0;
+    
+        
+    }
+
+    img.pieza{
+        width: 300px;
+        height: 250px;
+        margin: 40px;        
+
+    }
+
+    .titulo_principal{
+        font-size: 1rem;
+        margin-bottom: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    
+    /* Quienes somos movil */
+
+    .box2{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/* 19 pulgadas */
+@media (max-width: 1431px) {
+    .box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+/* 19 pulgadas */
+
+
+/* Estilo de la tienda */
+.card__item{
+    background: #fff;
+    width: 25%;
+    height: 10%;
+    overflow: hidden;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 40px -16px rgba(0,0,0, .5);
+    border-radius: 15px 15px 15px 15px;
+    
+}
+
+.card__item:hover{
+    border: solid 5px rgba(0, 0, 0, 0.034);
+    transition: border 0.2s;
+    
+}
+
+.card{
+    display: flex;
+    width: 80%;
+    border-radius: 15px 0 15px 0;
+    margin: 0 auto;
+    min-height: 50vh;
+    justify-content: space-between;
+    padding: 50px 0;
+    
+    
+    
+}
+
+.card__figure{
+    height: 40%;
+    width: 50%;
+    margin: auto;
+}
+
+.card__img{
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton{
+    display: inline-block;
+    background: #f1c232;
+    padding: 15px 30px;
+    margin-top: 1em;
+    text-decoration:none;
+    color: #fff;    
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px 0 15px 0;
+    box-shadow: 7px 7px 30px;
+    margin-top: auto; 
+    margin: 0 auto;
+}
+
+.card__paragraph{
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.card__title{
+    text-align: center;
+    
+    
+}
+
+.card__texts{
+    flex-grow: 1;
+    margin: 0 auto;
+
+}
+
+.titulo__tienda{
+    margin: 0 auto;
+    text-align: center;
+    width: 70vw;
+}
+
+@media (max-width: 1030px){
+    .card{
+        min-height: 700px;
+        overflow: hidden;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    .card__item{
+        width: 70vw;
+    }
+
+    h2.titulo__tienda{
+        font-size: 3rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+.titulo__tienda{
+    margin: 0 auto;
+    font-size: 5rem;
+    margin-top: 10px;
+
+}
+
+
+/* Estilo de la tienda */
+
+
+html {
+    min-height: 100%;
+    position: relative;}
+
+
+.pie-pagina{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-top: 90px;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+    /* padding: 20px 0px; */
+    grid-template-rows: repeat(2);
+      
+}
+
+.pie-pagina .grupo-1 .boxpie figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .boxpie figure img{
+    width: 180px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #274e13;
+    font-family: inherit;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #000;
+    font-size: 12px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #274e13;
+    text-align: center;
+    transition: all 300ms ease;
+    
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgba(24, 51, 1, 0.39);
+}
+
+.box__footer1{
+    color: #274e13;
+    font-family: inherit;
+    text-align: left;
+}
+
+.pie-pagina .grupo2{
+    
+    text-align: center;
+    background-color: #f1c232; 
+    width: 100%;
+    height: 8vh;
+    
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    width: 100%;
+}
+
+
+
+div.boxpie1{
+    width: 100%;
+    
+
+}
+    
+
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 30px 0px;
+        
+          
+    }
+
+    .box__footer1{
+        background-color: #f1c232;
+        
+    }
+
+    .boxpie{
+        background-color: #f1c232;
+    }
+}
+
+small{
+    font-size: 20px;
+}
+
+
